@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Fast MAPS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+   
+    <!-- Custom styles for this template -->
+    <link href="bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet">
+
+    <link href="bootstrap/dist/css/styles.css" rel="stylesheet">
+  
+  </head>
+
+  <body>
+        <div class="container">
+       <div class="header clearfix">
+        <h2 class="text-muted">Fast Maps</h2>
+      </div>
+
+
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+  
+      <div class="jumbotron">
+  
+       <br>
+        <p>A faster, less tedious way to upload your eClinicalWorks daily patient list to the Michigan Automated Prescription Service.</p>
+       
+        <br>
+           <% if (message.length > 0) { %>
+               <div allign ="center" class="alert alert-danger"><%= message %></div>
+           <% } %>
+        <br>
+       
+        <div>
+        <br>
+        <br>
+      <form method="post" action="/login" enctype='application/x-www-form-urlencoded' class="form-inline">
+
+
+        <div class='form-group'> 
+                <label class ="labelSignUp" for ="inputEmail">Email Address:</label>
+               <input type="email" class ="form-control" id ="inputEmail" placeholder="abc@xyz.com" name="email" class="form-control mx-sm-3">
+              </div>
+
+              <div class = "form-group">
+                 <label class ="labelSignUp" for="inputPassword">Password:</label>
+                 <input type="password" class="form-control" id="inputPassword" name="password" placeholder="password" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+                  <small id="passwordHelpInline" class="text-muted">
+                   Must be 8-20 characters long.
+                   </small>
+              </div>
+
+      <br>
+      <div align="center">
+      <button class ="btn btn-success" type="submit">Log In</button>
+      <br>
+      <br>
+      
+    </form>
+        <br>
+        <br>
+        <br>
+   <form method ="get" action="/signup">
+   <h4>No Account? Sign up to get started</h4>
+   <br>
+   <button class="btn btn-success">Sign Up Now</button>
+   </form>
+        </div>
+      <div align="right">
+      <br>
+      <br>
+      <br>
+      <footer class="footer">
+        <p>&copy; KishMira Labs 2017</p>
+      </footer>
+      </div>

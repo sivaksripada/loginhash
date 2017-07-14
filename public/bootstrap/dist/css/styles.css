@@ -1,0 +1,131 @@
+
+
+#mysubmit {
+    display: inline-block;
+    padding: 9px 12px;
+    padding-top: 7px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #419641;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #d1dade;
+    -webkit-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-image: none !important;
+    border: none;
+    text-shadow: none;
+    box-shadow: none;
+    transition: all 0.12s linear 0s !important;
+    font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#5cb85c, #419641);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 20;
+    text-align: center;
+}
+
+h2 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#337ab7, #337ab7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-control {
+    width: 100%;
+    padding: 20px 12px;
+    font-size: 18px;
+
+}
+
+.loginspan{
+    font-size: 48px;
+    color: #419641;
+}
+
+
+label {
+      font-family: "Helvetica", Times, serif;
+    font-size: 18px;
+    color: #333;
+    height: 20px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: right;
+    margin-right:15px;
+    float:left;
+    clear: both;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+   
+}
+
+label.filetypelabel {
+    display: inline-block;
+
+    height: 40px;
+    color: #419641;
+    text-align: center;
+   
+    cursor: pointer;
+    background-color: #d1dade;
+    -webkit-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-image: none !important;
+    border: none;
+    float:none;
+    text-shadow: none;
+    box-shadow: none;
+    transition: all 0.12s linear 0s !important;
+  
+}
+
+label.fileNameLabel {
+    float:none;
+    text-align: center;
+}
+
+
+label.labelSignUp {
+    margin-top: 5px;
+    float:center;
+    text-align: right;
+    vertical-align: center;
+    
+}
+
+.form-inline .form-group {
+    margin-left: 50px;
+    display:block;
+
+
+}
+.form-inline .form-control {
+    width: 50%;
+}
+
+#emailleft {
+    float:left;margin-right:10px;} 
+#clinicright{
+    float:right;} 
+
+#signupsubmit {
+float:none;}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Fast MAPS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+   
+    <!-- Custom styles for this template -->
+    <link href="bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet">
+
+    <link href="bootstrap/dist/css/styles.css" rel="stylesheet">
+  
+  </head>
+
+  <body>
+  <div class="container">
+          <div class="header clearfix">
+              
+            <h2 class="text-muted">Fast Maps</h2>
+          </div>
+
+
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+       <h1>Sign Up</h1>
+       <br>
+        <p>A faster, less tedious way to upload your eClinicalWorks daily patient list to the Michigan Automated Prescription Service.</p>
+       
+        <br>
+           <% if (message.length > 0) { %>
+               <div align ="center" class="alert alert-danger"><%= message %></div>
+           <% } %>
+        <br>
+       
+      
+      
+        <br>
+        <br>
+        <div class ="signUpForm">
+      <form action='/signup' method='POST' enctype='application/x-www-form-urlencoded' class="form-inline">
+
+
+             <div class='form-group'> 
+                <label class ="labelSignUp" for ="inputEmail">Email Address:</label>
+               <input type="email" class ="form-control" id ="inputEmail" placeholder="abc@xyz.com" name="email" class="form-control mx-sm-3">
+              </div>
+
+              <div class = "form-group">
+                 <label class ="labelSignUp" for="inputPassword">Password:</label>
+                 <input type="password" class="form-control" id="inputPassword" name="password" placeholder="password" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+                  <small id="passwordHelpInline" class="text-muted">
+                   Must be 8-20 characters long.
+                   </small>
+              </div>
+
+             <div class="form-group">
+                <label class ="labelSignUp" for="clinicName">Clinic Name:</label>
+              <input type="text" class="form-control" id="clinicName" name="clinicName" placeholder="My Clinic Name">
+            </div>
+
+              <div class="form-group">
+              <label class ="labelSignUp" for="model">Name of EMR:</label>
+              <select type="form" class="form-control" id="model" name="parseModel">
+                    <option>eClinical</option>
+                    <option>Other</option>
+              </select>
+              </div>
+
+              <div class="form-group">
+              <label class ="labelSignUp" for="officeManger">Office Manger Name:</label>
+              <input type="text" class="form-control" id="officeManger" name="officeManagerName" placeholder="Jane Doe">
+              </div>
+
+              <div class="form-group">
+              <label class ="labelSignUp" for="phoneNumber">Office Manager Cell #:</label>
+              <input type="text" class="form-control" id="phoneNumber" name="officeCellPhone">
+              </div>
+
+
+            <div align="center">
+              <button id="signupsubmit" class ="btn btn-success" type="submit">Sign Up</button>
+            </div>
+             
+    
+      </form><!--closes form--> 
+       
+      </div><!--closes signupform div--> 
+     
+      <br>
+      <br>
+      <br>
+      <footer class="footer" align ="right">
+        <p>&copy; KishMira Labs 2017</p>
+      </footer>
+    </div><!--closes jumbotron--> 
+ </div><!--closes container--> 
