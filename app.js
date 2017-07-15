@@ -7,6 +7,8 @@ var mongoose = require('mongoose');
 var app = express();
 var passport = require('passport');
 var flash = require ('connect-flash');
+var forceSsl = require('force-ssl-heroku');
+
 
 var fs = require('fs');
 
@@ -23,6 +25,7 @@ require('./config/passport.js')(passport);
 
 app.set('view engine','ejs');
 
+app.use(forceSsl);
 app.use(express.static(path.join(__dirname + '/public')));
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json())
@@ -66,6 +69,11 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
+app.use(function(req, res, next){
+    res.locals.success_messages = req.flash('success_messages');
+    res.locals.error_messages = req.flash('error_messages');
+    next();
+});
 
 
 require('./models/routes.js')(app,passport);

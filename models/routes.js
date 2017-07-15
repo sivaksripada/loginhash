@@ -82,9 +82,13 @@ module.exports = function(app, passport) {
 
         });
     } else {
-        res.render('main.ejs');
-    };
+        
+        //res.render('main.ejs', {message: req.user.clinicName, message2: req.user.email});
+        //req.flash('error_messages', 'Select a file then hit submit')
+     res.render('main.ejs', {message: req.user.clinicName, message2: req.user.email}); 
 
+
+};
 
 });
 };
